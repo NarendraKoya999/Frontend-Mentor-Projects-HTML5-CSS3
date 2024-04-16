@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    gap: 0px;
+    background-color: rgb(252, 241, 227);
+}
+.left-content{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.right-content{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.right-content h1{
+    display: flex;
+    justify-content:start;
+    align-self: flex-start;
+    position: relative;
+    font-size: 10px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+.right-content p.p-1{
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    position: relative;
+    color:black;
+    margin-right: 45px;
+}
+.right-content p.p-2{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color:rgb(42, 39, 39);
+    margin-right: 45px;
+    letter-spacing: 2px;
+}
+.price-card{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: 20px;
+}
+.price-card p.p-3{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(79, 145, 117);
+    font-stretch:ultra-expanded;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+.price-card .p-4{
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color:black;
+}
+.add-to-cart{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(79, 145, 117);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.add-to-cart:hover{
+    background-color: rgb(42, 39, 39);
+}
+span{
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .left-content{
+        width: 100%;
+    }
+    .left-content img{
+        width: 100%;
+    }
+}

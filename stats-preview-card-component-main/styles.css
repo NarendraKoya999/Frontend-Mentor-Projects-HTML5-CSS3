@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    max-width: 880px;
+    height: 70%;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+.left-content {
+    flex: 1; 
+    height: 100%;
+    padding: 40px; 
+    padding-top: 50px;
+    background-color: #2b17539e;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.left-content h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.left-content h1 span{
+    color: hsl(277, 64%, 61%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.left-content p{
+    color: rgba(252, 249, 249, 0.283);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.left-content p span{
+    color: rgba(252, 249, 249, 0.283);
+    font-weight: 100;
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.left-content .stats{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    gap: 70px;
+}
+.left-content .stats p::first-line{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.left-content p:nth-of-type(2) span{
+    color: rgba(252, 249, 249, 0.283);
+}
+.left-content p:nth-of-type(3) span{
+    color: rgba(252, 249, 249, 0.283);
+}
+.right-content {
+    flex: 1;
+    width: 40%; 
+    height: 100%;
+    position: relative; 
+    display: flex;
+    align-items: flex-end; 
+}
+
+.right-content img {
+    height: 100%;
+    max-width: 100%; 
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+    object-position: center;
+}
+.right-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 94%, 43%, 0.5);
+    border-radius: 0 10px 10px 0;
+    z-index: 1; /* Place the overlay above the image */
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse; /* Stack content on smaller screens */
+    }
+    .left-content, .right-content {
+        border-radius: 10px; /* Remove rounded corners on smaller screens */
+    }
+    .left-content {
+        border-radius: 10px 10px 0 0; /* Adjust rounded corners for top card */
+    }
+    .right-content {
+        border-radius: 0 0 10px 10px; /* Adjust rounded corners for bottom card */
+        width: 100%; /* Full width on smaller screens */
+        align-items: center; /* Center image vertically */
+    }
+    .right-content::before {
+        border-radius: 0 0 10px 10px; /* Adjust overlay rounded corners */
+    }
+    .right-content img {
+        border-radius: 0 0 10px 10px; /* Adjust image rounded corners */
+    }
+}

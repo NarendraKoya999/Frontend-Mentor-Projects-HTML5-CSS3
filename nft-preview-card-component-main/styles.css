@@ -1,0 +1,161 @@
+/* Desktop Code */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif; 
+}
+body{
+	background-color: rgb(7 19 51 / 96%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+	padding: 20px;
+	overflow: hidden;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(219, 37%, 24%);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0 auto;
+	width: 25%;
+	height: 70%;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.card img{
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.card h1{
+	color: white;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	align-self: flex-start;
+}
+.card p{
+	color: rgb(121 160 199 / 93%);
+	font-size: 0.8rem;
+	margin-bottom: 20px;
+}
+.card .footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.card .footer .eth{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.card .footer .time{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.card .footer .eth img{
+	width: 20px;
+	height: 20px;
+}
+.card .footer .eth p{
+	color: rgba(6, 251, 251, 0.884);
+	font-size: 0.8rem;
+	margin-top: 10px;
+	font-weight: 700;
+}
+.card .footer .time img{
+	width: 20px;
+	height: 20px;
+}
+.card .footer .time p{
+	color: rgb(121 160 199 / 93%);
+	font-size: 0.8rem;
+	margin-top: 10px;
+	font-weight: 700;
+}
+.card .creator{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	align-self: flex-start;
+}
+hr{
+	width: 100%;
+	height: 1px;
+	background-color: rgba(247, 248, 249, 0.039);
+	border: none;
+	margin-bottom: 10px;
+	border-width: thin;
+}
+.card .creator img{
+	width: 50px;
+	height: 50px;
+	text-align: left;
+	margin-top: 10px;
+}
+.card .creator p{
+	color: rgb(121 160 199 / 93%);
+	font-size: 0.8rem;
+	margin-top: 10px;
+	font-weight: 700;
+	text-align: left;
+}
+.creator p span{
+	color: rgba(236, 242, 247, 0.93);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+/* Active State Code */
+.card h1:active{
+	transform: scale(0.9);
+	transition: 0.5s;
+	color: rgba(6, 251, 251, 0.884);
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+}
+.creator p span:active{
+	transform: scale(0.9);
+	transition: 0.5s;
+    color: rgba(6, 251, 251, 0.884);
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+}
+.card .equilibrium:active{
+	content: "";
+	background-image: url("./images/icon-view.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(6, 251, 251, 0.884);
+	border-radius: 10px;
+	transform: scale(0.9);
+	transition: 0.5s;
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+}
+
+
+/* Responsive Desktop Code */
+@media screen and (max-width: 800px) {
+	.card{
+		width: 50%;
+		height: 70%;
+	}
+}
+/* Responsive Mobile Code */
+@media screen and (max-width: 500px) {
+	.card{
+		width: 80%;
+		height: 70%;
+	}
+}

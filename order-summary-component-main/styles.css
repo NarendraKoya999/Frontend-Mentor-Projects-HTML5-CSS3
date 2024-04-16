@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+.card{
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card h1{
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin: 20px 0;
+}
+.card p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3px 0;
+    margin:0 auto;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 80%;
+}
+.price p span{
+    margin-right: 100px;
+    width: 20px;
+}
+.price p::first-line{
+    font-weight: bolder;
+    color: hsl(223, 98%, 17%);
+    font-size: 15px;
+}
+span.price-year{
+    color: hsl(224, 6%, 62%);
+    font-weight: bolder;
+    font-size: 15px;
+}
+.price a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 14px;
+}
+.price a:hover{
+    color: hsl(224, 23%, 55%);
+}
+button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    margin: 0px auto;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+h4{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+/* Active state Code style */
+.price a:active{
+    translate: 0.9s;
+    color: hsl(245deg 49.77% 59.86%);
+}
+button:active{
+    translate: 0.9s;
+    background-color:hsl(245deg 49.77% 59.86%);
+}
+h4:active{
+    translate: 0.9s;
+    color: black;
+    cursor: pointer;
+}
+/* Mobile Styles */
+@media (max-width: 767px) {
+.card {
+    width: 90%;
+    top: 50px;
+    }
+}
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+.card {
+    width: 70%;
+    top: 80px;
+    }
+}
+/* Desktop Styles */
+@media (min-width: 1024px) {
+.card {
+    width: 450px;
+    top: 100px;
+    }
+}    
