@@ -299,10 +299,10 @@ Each project is self-contained and runs directly in the browser — no build too
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/frontend-mentor-challenges.git
+git clone https://github.com/NarendraKoya999/Frontend-Mentor-Projects-HTML5-CSS3.git
 
 # Navigate to any component folder
-cd frontend-mentor-challenges/01-3-column-preview-card
+cd Frontend-Mentor-Projects-HTML5-CSS3/stats-preview-card-component-main
 
 # Open directly in your browser
 open index.html
