@@ -330,7 +330,7 @@ I am actively open to frontend development roles, UI engineering positions, free
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NarendraKoya999)
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Profile-3F54A3?style=flat-square)](https://www.frontendmentor.io/profile/your-username)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-ff6b6b?style=flat-square&logo=vercel&logoColor=white)](https://narendrakoya999.github.io/Personal-Portfolio-Website/)
-[![Email](https://img.shields.io/badge/Email-Contact-D44638?style=flat-square&logo=gmail&logoColor=white)](mailto:narendra.koya.in@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-D44638?style=flat-square&logo=gmail&logoColor=white)](https://shorturl.at/Lo08u)
 
 </div>
 
